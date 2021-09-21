@@ -1,0 +1,37 @@
+{
+    "name": "moemenphpdev/bitly-shortner",
+    "description": "Shorten Long Urls",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Moemenphpdev\\BitlyShortner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "moemen-gaballah",
+            "email": "moemengaballa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MoemenPhpDev\\BitlyShortner\\" : "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MoemenPhpDev\\BitlyShortner\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "MoemenPhpDev\\BitlyShortner\\Facade"
+            }
+        }
+    }
+}
